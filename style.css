@@ -65,6 +65,13 @@ header {
 .notifications {
     grid-column: 1 / 2;
     justify-self: end;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.notifications:hover {
+    cursor: pointer;
+    background-color: #dddddd;
 }
 
 .user-panel-image {
@@ -210,4 +217,123 @@ header {
 .content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 25px;
+    gap: 20px;
+}
+
+.main-content {
+    grid-column: 1 / 2;
+}
+
+.main-content h3 {
+    grid-column: 1 / 3;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    grid-column: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 8px solid #f0b429;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+.card p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p:nth-child(2) {
+    font-size: 14px;
+    color: #636363;
+    line-height: 20px;
+}
+
+.content-sidebar {
+    grid-column: 2 / 3;
+}
+
+.announcements-container h3 {
+    margin-bottom: 20px;
+}
+
+.announcements {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.announcements div {
+    padding: 5px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+
+.announcements div:hover {
+    cursor: pointer;
+    background-color: #e7e7e7;
+}
+
+.announcements div p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.announcements div p:last-child {
+    font-size: 12px;
+    color: #636363;
+    margin-bottom: 15px;
+}
+
+.trending h3 {
+    margin-bottom: 20px;
+}
+
+.trends {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.recommended {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.recommended:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+}
+
+.recommended span img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.recommended div p {
+    color: #636363;
+    font-size: 12px;
 }
